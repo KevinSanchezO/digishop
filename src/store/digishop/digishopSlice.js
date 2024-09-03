@@ -8,7 +8,7 @@ export const digishopSlice = createSlice({
         itemsCart:[],
     },
     reducers: {
-        onLogoutCalendar: (state) => {
+        onLogoutDigishop: (state) => {
             state.isLoadingEvents = true;
             digimons = [];
             state.itemsCart = [];
@@ -17,5 +17,5 @@ export const digishopSlice = createSlice({
 });
 
 export const {
-    onLogoutCalendar,
+    onLogoutDigishop,
 } = digishopSlice.actions;
