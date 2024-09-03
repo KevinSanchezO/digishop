@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const RegisterPage = () => {
 
     const registerSubmit = (event) => {
@@ -9,7 +11,7 @@ export const RegisterPage = () => {
         <div>
             <div>
                 <div>
-                    <h3>Register</h3>
+                    <h3>Register to create an account</h3>
 
                     <form onSubmit={registerSubmit}>
                         <div>
@@ -54,9 +56,11 @@ export const RegisterPage = () => {
                             <input 
                                 type="submit" 
                                 className="btnSubmit" 
-                                value="Crear cuenta" />
+                                value="Create account" />
                         </div>
                     </form>
+
+                    <p>Already have an account? <Link to="/auth/login">Login</Link></p>
                 </div>
             </div>
         </div>

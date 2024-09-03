@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { AuthRoutes } from "../auth/routes/AuthRoutes";
+import { DigishopRoutes } from "../digishop/routes/DigishopRoutes";
 
 
 export const AppRouter = () => {
@@ -7,7 +8,7 @@ export const AppRouter = () => {
         <Routes>
             {
                 <>
-                {/* <Route path="/*" element={<ShopRoutes/>}/> */}
+                <Route path="/*" element={<DigishopRoutes/>}/>
                 <Route path="/auth/*" element={<AuthRoutes/>}/>
                 </>
             }

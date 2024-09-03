@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const LoginPage = () => {
 
     const loginSubmit = (event) => {
@@ -31,7 +33,16 @@ export const LoginPage = () => {
                                 // onChange={onLoginInputChange}
                             />
                         </div>
+
+                        <div>
+                            <input 
+                                type="submit" 
+                                className="btnSubmit" 
+                                value="Login" />
+                        </div>
                     </form>
+
+                    <p>Don't have an account? <Link to="/auth/register">Register</Link></p>
                 </div>
             </div>
         </div>
