@@ -1,0 +1,28 @@
+:root {
+    --deep-balck: #141619;
+    --black: #2C2E3A;
+    --deep-blue: #050a44;
+    --blue: #0a21C0;
+    --grey: #B3B4BD;
+    --white: #fff;
+    --red: #f44336;
+    --deep-red: #d43a2f;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--grey);
+}

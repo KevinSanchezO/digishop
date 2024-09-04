@@ -1,0 +1,26 @@
+:root {
+    --deep-balck: #141619;
+    --black: #2C2E3A;
+    --deep-blue: #050a44;
+    --blue: #0a21C0;
+    --grey: #B3B4BD;
+    --white: #fff;
+    --red: #f44336;
+    --deep-red: #d43a2f;
+}
+
+.side-bar {
+    width: 300px;
+    background-color: var(--deep-balck);
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: var(--white);
+}
+
+li {
+    color: var(--white);
+}
