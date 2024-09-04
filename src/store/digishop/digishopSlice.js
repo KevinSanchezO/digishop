@@ -10,7 +10,7 @@ export const digishopSlice = createSlice({
     reducers: {
         onLogoutDigishop: (state) => {
             state.isLoadingEvents = true;
-            digimons = [];
+            state.digimons = [];
             state.itemsCart = [];
         }
     }

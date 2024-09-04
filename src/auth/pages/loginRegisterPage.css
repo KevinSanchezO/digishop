@@ -1,3 +1,12 @@
+:root {
+    --deep-balck: #141619;
+    --black: #2C2E3A;
+    --deep-blue: #050a44;
+    --blue: #0a21C0;
+    --grey: #B3B4BD;
+    --white: #fff;
+}
+
 .form-container {
     position: absolute;
     top: 50%;
@@ -5,6 +14,8 @@
     transform: translate(-50%, -50%); 
     width: 400px;
     text-align: center;
+    background-color: var(--white);
+    border-radius: 10%;
 }
 
 .login-form {
@@ -15,6 +26,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: var(--white);
+    border-radius: 10%;
 }
 
 .login-form form{
@@ -29,9 +42,9 @@
     width: 100%;
     max-width: 350px; 
     border: 0;
-    border-bottom: 2px solid #292929;
+    border-bottom: 2px solid var(--deep-balck);
     outline: 0;
-    color: #292929;
+    color: var(--deep-balck);
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -48,6 +61,10 @@
     border: none;
     cursor: pointer;
     margin: 10px 0px;
-    color: #fff;
-    background-color: #0062cc;
+    color: var(--white);
+    background-color: var(--black);
 }
+
+.btnSubmit:hover {
+    background-color: var(--deep-balck);
+  }

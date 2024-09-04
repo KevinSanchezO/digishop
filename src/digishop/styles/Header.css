@@ -1,0 +1,52 @@
+:root {
+    --deep-balck: #141619;
+    --black: #2C2E3A;
+    --deep-blue: #050a44;
+    --blue: #0a21C0;
+    --grey: #B3B4BD;
+    --white: #fff;
+    --red: #f44336;
+    --deep-red: #d43a2f;
+}
+
+.header{
+    display: flex;
+    background-color: var(--deep-balck);
+    padding: 0.5%;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    gap: 10px;
+}
+
+.btnLogout {
+    border-radius: 1rem;
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    margin: 10px 0px;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.btnLogout:hover {
+    background-color: var(--deep-red);
+}
+
+.btn {
+    border-radius: 1rem;
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    margin: 10px 0px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--deep-blue);
+}

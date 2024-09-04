@@ -23,8 +23,8 @@ export const useAuthStore = () => {
     }
 
     const startLogout = () => {
-        dispatch(onLogoutDigishop);
-        dispatch(onLogout);
+        dispatch(onLogoutDigishop());
+        dispatch(onLogout());
     }
 
     return {
