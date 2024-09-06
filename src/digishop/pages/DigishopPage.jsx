@@ -3,22 +3,30 @@ import { Header } from '../components/Header'
 import { SideBarCart } from '../components/SideBarCart'
 import '../styles/DigishopPage.css'
 import { SideBarHistory } from '../components/SideBarHistory'
+import { Shop } from '../components/Shop'
+import { useUIStore } from '../../hooks/useUIStore'
 
 export const DigishopPage = () => {
 
-    const [show, setShow] = useState(true)
+    const {isShoppingCartOpen, isHistoryOpen} = useUIStore();
 
   return (
     <div className='page-container'>
         <Header/>
         <div className='content'>
-            {(show) ?
+            {(isShoppingCartOpen) ?
             <SideBarCart />
             :
+            <></>
+            }
+
+            {(isHistoryOpen) ?
             <SideBarHistory/>
+            :
+            <></>
             }
             <main className='main-content'>
-                <h1>SHOP</h1>
+                <Shop />
             </main>
         </div>
     </div>

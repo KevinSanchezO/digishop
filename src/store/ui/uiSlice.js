@@ -4,18 +4,19 @@ export const uiSlice = createSlice({
     name: 'ui',
     initialState: {
         isShoppingCartOpen: false,
+        isHistoryOpen:false,
     },
     reducers: {
-        onOpenShoppingCart: (state) => {
-            state.isShoppingCartOpen = true;
+        handleShoppingCart: (state, {payload}) => {
+            state.isShoppingCartOpen = payload;
         },
-        onCloseShoppingCart: (state) => {
-            state.isShoppingCartOpen = false;
-        }
+        handleOpenHistory: (state, {payload}) => {
+            state.isHistoryOpen = payload;
+        },
     }
 });
 
 export const {
-    onOpenShoppingCart,
-    onCloseShoppingCart,
+    handleShoppingCart,
+    handleOpenHistory
 } = uiSlice.actions
