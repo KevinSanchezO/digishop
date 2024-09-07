@@ -15,9 +15,9 @@ export const Shop = () => {
 
 
     return (
-        <div>
+        <div className='container'>
             <h1>SHOP</h1>
-            <p>Take a look at all the different Digimons, available today!</p>
+            <p><strong>Take a look at all the different Digimons, available today!</strong></p>
             <div className='cardsContainer'>
                 <DigimonCardShop 
                     imageUrl={"https://digi-api.com/images/digimon/w/Stingmon.png"} 
@@ -40,7 +40,7 @@ export const Shop = () => {
                 />
                 <DigimonCardShop 
                     imageUrl={"https://digi-api.com/images/digimon/w/Agumon.png"} 
-                    id={33}
+                    id={1}
                     name={"Agumon"} 
                     type={"Reptile"}
                 />
