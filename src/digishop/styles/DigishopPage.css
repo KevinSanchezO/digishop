@@ -1,14 +1,3 @@
-:root {
-    --deep-balck: #141619;
-    --black: #2C2E3A;
-    --deep-blue: #050a44;
-    --blue: #0a21C0;
-    --grey: #B3B4BD;
-    --white: #fff;
-    --red: #f44336;
-    --deep-red: #d43a2f;
-}
-
 .page-container {
     display: flex;
     flex-direction: column;
@@ -25,4 +14,5 @@
     flex: 1;
     padding: 20px;
     background-color: var(--grey);
+    overflow: auto;
 }
